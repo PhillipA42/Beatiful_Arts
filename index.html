@@ -24,6 +24,36 @@
         background-size: cover;
         background-position: center;
       }
+
+      #gallery {
+        background-image: url("../assets/images/gallery-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+
+      #gallery::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+      }
+
+      #gallery .container {
+        position: relative;
+        z-index: 2;
+      }
+      #gallery .carousel {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      #gallery .carousel-item img {
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
     </style>
     <link rel="shortcut icon" href="assets\svg\logo.svg" type="image/x-icon" />
   </head>
@@ -118,9 +148,110 @@
             world of visual expression.
           </p>
           <button type="button" class="btn lg btn-warning mt-4">
-            Suport Us
+            Sponsor Us
           </button>
         </div>
+      </div>
+    </section>
+
+    <!--Gallery page-->
+    <section
+      id="gallery"
+      class="min-vh-100 d-flex flex-column justify-content-center align-items-center text-center text-light"
+    >
+      <div class="container py-5">
+        <h1 class="display-4 fw-bold text-warning mb-3">Art Gallery</h1>
+        <p class="lead fs-4 fw-lighter mb-5">
+          Explore a stunning collection of artistic masterpieces from modern
+          creativity to timeless classics, each piece telling a story of beauty
+          and inspiration.
+        </p>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets\images\gallery-pic1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="fs-6 text-warning">Drawing of a lady</h5>
+                <p class="lead fs-2 fw-lighter text-light">
+                  Picture showing drawing of a beautiful lady.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets\images\gallery-pic2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="fs-6 text-warning">Sculputers</h5>
+                <p class="lead fs-2 fw-lighter text-light">
+                  A picture showing sculpures.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets\images\gallery-pic4.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="fs-6 text-warning">Various sculptures</h5>
+                <p class="lead fs-2 fw-lighter text-light">
+                  A picture showing various sculputures of a person and some
+                  animals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <a href="#support" class="btn btn-warning btn-lg px-5">Sponsor Us</a>
       </div>
     </section>
   </body>
