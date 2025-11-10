@@ -132,7 +132,7 @@
     <section id="home" class="min-vh-100">
       <div
         class="position absolute top-0 start-0 w-100 h-100 bg-primary opacity-75"
-      ></div>
+      >
       <div class="position-relative py-5">
         <div class="container py-5">
           <h1 class="display-1 fw-bold text-warning">Beatiful Arts Gallery</h1>
@@ -152,12 +152,13 @@
           </button>
         </div>
       </div>
+      </div>
     </section>
 
     <!--Gallery page-->
     <section
       id="gallery"
-      class="min-vh-100 d-flex flex-column justify-content-center align-items-center text-center text-light"
+      class="min-vh-100 d-flex flex-column justify-content-center align-items-center text-center text-light bg-primary opacity-75"
     >
       <div class="container py-5">
         <h1 class="display-4 fw-bold text-warning mb-3">Art Gallery</h1>
@@ -251,7 +252,100 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <a href="#support" class="btn btn-warning btn-lg px-5">Sponsor Us</a>
+        <a href="#support" class="btn btn-warning btn-lg px-5 mt-4">Sponsor Us</a>
+      </div>
+    </section>
+    
+    <section
+      id="sponsorship"
+      class="py-5 text-light"
+      style="background-color: #2c1810; position: relative"
+    >
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1 class="display-4 fw-bold text-warning">
+            Sponsorship Opportunities
+          </h1>
+          <p class="lead fs-5 fw-lighter mt-3">
+            Support the <strong>Beautiful Arts Gallery</strong> and help us
+            continue to inspire creativity, celebrate culture, and bring art to
+            our community. Your sponsorship enables exhibitions, educational
+            programs, and artist collaborations that make a lasting cultural
+            impact.
+          </p>
+        </div>
+
+        <!-- Sponsorship Tiers -->
+        <div class="row text-center mb-5">
+          <div class="col-md-4 mb-4">
+            <div class="card bg-dark border-warning h-100">
+              <div class="card-body">
+                <h3 class="card-title text-warning">Bronze Sponsor</h3>
+                <p class="card-text text-light mt-3">
+                  Recognition on our website and event materials.
+                </p>
+                <p class="fw-bold text-warning">$500+</p>
+                <a href="#contact-us" class="btn btn-outline-warning"
+                  >Become a Sponsor</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card bg-dark border-warning h-100">
+              <div class="card-body">
+                <h3 class="card-title text-warning">Silver Sponsor</h3>
+                <p class="card-text text-light mt-3">
+                  Website & event recognition + free tickets to exhibitions.
+                </p>
+                <p class="fw-bold text-warning">$1,000+</p>
+                <a href="#contact-us" class="btn btn-outline-warning"
+                  >Become a Sponsor</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card bg-dark border-warning h-100">
+              <div class="card-body">
+                <h3 class="card-title text-warning">Gold Sponsor</h3>
+                <p class="card-text text-light mt-3">
+                  Premium recognition, logo display, VIP invitations, and media
+                  mention.
+                </p>
+                <p class="fw-bold text-warning">$2,500+</p>
+                <a href="#contact-us" class="btn btn-outline-warning"
+                  >Become a Sponsor</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Benefits of Sponsorship -->
+        <div class="text-center mb-5">
+          <h2 class="text-warning mb-3">Why Partner With Us?</h2>
+          <p class="lead fs-5 fw-lighter">
+            Sponsoring Beautiful Arts Gallery connects your brand with
+            creativity, culture, and community impact. Sponsors gain visibility
+            across our exhibitions, media coverage, and social platforms while
+            supporting emerging artists and education programs.
+          </p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center">
+          <h3 class="text-warning mb-3">Ready to Make a Difference?</h3>
+          <p class="lead fs-5 fw-lighter">
+            Join us in celebrating the beauty of art and culture. Reach out to
+            our sponsorship team today.
+          </p>
+          <a href="#contact-us" class="btn btn-warning btn-lg px-5"
+            >Contact Us to Sponsor</a
+          >
+        </div>
       </div>
     </section>
 
@@ -263,9 +357,7 @@
       <div class="container">
         <!-- Company Name & Description -->
         <div class="text-center mb-5">
-          <h1 class="display-4 fw-bold text-warning">
-            Beautiful Arts Gallery
-          </h1>
+          <h1 class="display-4 fw-bold text-warning">Beautiful Arts Gallery</h1>
           <p class="lead fs-5 fw-lighter mt-3">
             Beautiful Arts Gallery is a creative hub and museum dedicated to
             celebrating the beauty of human expression through art. We strive to
@@ -311,6 +403,99 @@
             accessible to all, ensuring that creativity remains a living force
             in our communities.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact-us"
+      class="py-5 text-light"
+      style="background-color: #A44200; position: relative"
+    >
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1 class="display-4 fw-bold text-warning">Contact Us</h1>
+          <p class="lead fs-5 fw-lighter mt-3">
+            Have questions, ideas, or want to become a sponsor? We’d love to
+            hear from you! Reach out to our team and we’ll get back to you as
+            soon as possible.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form
+              class="p-4 rounded-4"
+              style="background-color: rgba(0, 0, 0, 0.6)"
+              action="#"
+              method="post"
+            >
+              <div class="mb-3">
+                <label for="name" class="form-label text-warning"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control form-control-lg"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="form-label text-warning"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form-control form-control-lg"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label text-warning"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control form-control-lg"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+
+              <div class="mb-4">
+                <label for="message" class="form-label text-warning"
+                  >Your Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="form-control form-control-lg"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="btn btn-warning btn-lg px-5 fw-bold"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
